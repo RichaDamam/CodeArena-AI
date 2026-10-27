@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #080C14;
+  --color-dark-card: #0F172A;
+  --color-dark-border: #1E293B;
+  --color-dark-text: #F8FAFC;
+  --color-dark-muted: #94A3B8;
+
+  --color-cyber-cyan: #00F0FF;
+  --color-cyber-magenta: #FF007F;
+  --color-cyber-green: #39FF14;
+  --color-cyber-purple: #BD00FF;
+  --color-cyber-yellow: #FFEA00;
+
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-glow-cyan: 0 0 15px rgba(0, 240, 255, 0.4);
+  --shadow-glow-magenta: 0 0 15px rgba(255, 0, 127, 0.4);
+  --shadow-glow-green: 0 0 15px rgba(57, 255, 20, 0.4);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+:root {
+  background-color: #080C14;
+  color: #F8FAFC;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #080C14;
+}
+
+/* Glassmorphic Panel Utility */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Glowing text utilities */
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+}
+
+.text-glow-magenta {
+  text-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
+}
+
+.text-glow-green {
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.6);
+}
+
+/* Custom scrollbars for panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080C14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Smooth monaco border container adjustment */
+.monaco-editor {
+  border-radius: 8px;
+  overflow: hidden;
+}
